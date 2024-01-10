@@ -1,0 +1,59 @@
+
+<section class="content">
+  <div class="content-block">
+
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+            <h3>Side Bar Theme</h3>
+
+
+          </div>
+          <div class="body">
+            <div class="container">
+              <div class="settingSidebar-body ps-container ps-theme-default">
+                <div class="fade show active">
+                  <div class="rightSetting">
+                    <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                    <mat-button-toggle-group class="mt-2" [value]="sidebarColor">
+                      <mat-button-toggle (click)="changeSidebarColor('light')" value="light">Light</mat-button-toggle>
+                      <mat-button-toggle (click)="changeSidebarColor('dark')" value="dark">Dark</mat-button-toggle>
+                      <mat-button-toggle (click)="changeSidebarColor('peel')" value="peel">Peel</mat-button-toggle>
+                      <mat-button-toggle (click)="changeSidebarColor('cyan')" value="cyan">Cyan</mat-button-toggle>
+                      <mat-button-toggle (click)="changeSidebarColor('orange')" value="orange">Orange</mat-button-toggle>
+                    </mat-button-toggle-group>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <div class="sidebar" [ngClass]="sidebarColor"></div> -->
+
+              <select [(ngModel)]="selectedColor" (change)="onColorChange()">
+                <option *ngFor="let color of fontColors" [value]="color">{{ color }}</option>
+              </select>
+
+
+
+
+
+
+                    </div>
+                  </div>
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+

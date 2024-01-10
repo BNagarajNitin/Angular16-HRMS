@@ -1,0 +1,218 @@
+<p>general-settings works!</p>
+<section class="content" >
+  <div class="content-block">
+
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+
+
+
+          </div>
+          <div class="body" >
+            <mat-tab-group>
+              <mat-tab label="General Settings">
+                <div class="body5">
+                  <label>Application Name</label>
+                  <input type="text" class="wider-input">
+                  <label>Application Tittle</label>
+                  <input type="text" class="wider-input">
+                  <label>Keywords</label>
+                  <input type="text" class="wider-input">
+                  <label>Description</label>
+                  <textarea rows="6"></textarea>
+                  <label>Footer About</label>
+                  <textarea rows="3"></textarea>
+                  <label>Admin Email</label>
+                  <input type="text" class="wider-input">
+                  <label>Phone number</label>
+                  <input type="text" class="wider-input">
+                  <label>Address</label>
+                  <input type="text" class="wider-input">
+                  <label>Copyright</label>
+                  <input type="text" class="wider-input">
+                  <label>Terms & Condition</label>
+                  <ckeditor [formControl]="content" required></ckeditor>
+                </div>
+                <button class="button5" mat-raised-button color="primary">Save Changes</button>
+
+
+
+
+              </mat-tab>
+              <mat-tab label="SaaS Settings">
+                <section class="content">
+                  <div class="content-block">
+
+                    <div class="row clearfix">
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="card">
+
+                          <div class="body5">
+                            <label>SAAS Mode</label>
+                            <select id="role" name="role" class="wider-input">
+                              <option value="select">Select An Option</option>
+                              <option value="single">Single Tenant Per DB</option>
+                              <option value="multi-single">MultiTenant Single DB</option>
+                              <option value="multi-double">MultiTenant Multiple DB</option>
+                            </select>
+                            <p>Select the type of SAAS model you want to adopt.</p>
+                            <p>Single Tenant Per DB - requires your current database user to have priviledge to create another database. This wont likely work on share hosting plan and it might require dedicated server or DB user with root priviledge.
+                            </p>
+                            <p>MultiTenant Single DB - allow you to put all tenant in single current database. This is best option for shared hosting plans such as cpanel.
+                            </p>
+                             <p>MultiTenant Multiple DB - Sharding allow you to have pool of databases to use instead of single db, you can split client accross numbers of database. We automatically select fittest DB when creating tenant, you can move tenant from on DB to another. This is a good option if you dont have root priviledge. This will work on cpanel or any shared hosting</p>
+
+                            <label>Reserved Slug/Subdomain</label>
+                            <input type="text" class="wider-input">
+                            <p>Subdomain keys you want to prevent users company having such as; app, main, base,www, mail e.t.c, we set all listed one by core, to add yours, input in box above.</p>
+                            <label>Tenant database name prefix</label>
+                            <input type="text" class="wider-input">
+                            <p>f your system requires special name format/prefix, set the input prefix here and db created for single tenant single DB will be like: yourprefix_saas_db_tenantslug.</p>
+
+                          </div>
+                          <button class="button5" mat-raised-button color="primary">Save Changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </mat-tab>
+              <mat-tab label="Email Settings">
+                <div class="body5">
+                  <label>Mail Protocol</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Tittle</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Host</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Port</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Username</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Password</label>
+                  <input type="text" class="wider-input">
+                  <label>Mail Encryption</label>
+                  <input type="text" class="wider-input">
+                  <p>Test email on save</p>
+
+
+                </div>
+                <button class="button5" mat-raised-button color="primary">Save Changes</button>
+                 </mat-tab>
+              <mat-tab label="Social Settings">
+                <div class="body5">
+                  <label>Facebook</label>
+                  <input type="text" class="wider-input">
+                  <label>Twitter</label>
+                  <input type="text" class="wider-input">
+                  <label>Instagram</label>
+                  <input type="text" class="wider-input">
+                  <label>Linkedin</label>
+                  <input type="text" class="wider-input">
+
+                </div>
+                <button class="button5" mat-raised-button color="primary">Save Changes</button>
+
+
+                 </mat-tab>
+              <mat-tab label=" reCaptcha">
+                <div class="body5">
+                <label>Captcha Site key</label>
+                <input type="text" class="wider-input">
+                <label>Captcha Secret key</label>
+                <input type="text" class="wider-input">
+                <label>Captcha Acceptable Spam Score.0(robot)-1(human)</label>
+                <input type="text" class="wider-input">
+
+              </div>
+              <button class="button5" mat-raised-button color="primary">Save Changes</button>
+
+
+              </mat-tab>
+              <mat-tab label="Theme">
+                <div class="body5">
+                  <label>AdminTheme</label>
+                  <input type="text" class="wider-input">
+                  <label>TenantTheme</label>
+                  <input type="text" class="wider-input">
+                  <label>FontTheme</label>
+                  <input type="text" class="wider-input">
+
+                </div>
+                <button class="button5" mat-raised-button color="primary">Save Changes</button>
+              </mat-tab>
+              <mat-tab label="Custom Code">
+                <div class="body5">
+
+                <label>Landing Custom Code(js/css)</label>
+                <p>i.e Trackers, Google Analytics, Custom CSS for landing page e.t.c</p>
+                <textarea class="custom"  rows="20"></textarea>
+                <label>Tenant Dashboard Custom Codes (js/css)</label>
+                <p>i.e Onboarding script, Trackers, Custom CSS for tenant dashboard e.t.c</p>
+                <textarea class="custom"  rows="20"></textarea>
+
+                </div>
+                <button class="button5" mat-raised-button color="primary">Save Changes</button>
+
+
+
+
+              </mat-tab>
+            </mat-tab-group>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

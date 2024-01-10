@@ -1,0 +1,57 @@
+<p>alerting works!</p>
+<section class="content">
+  <div class="content-block">
+
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong>Alerting</strong></h2>
+
+
+            <button mat-raised-button color="primary">Observation Configuration</button>
+
+          </div>
+          <div class="body">
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef class="header-cell">Status</th>
+    <td mat-cell *matCellDef="let row">{{ row.status }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef class="header-cell">Date</th>
+    <td mat-cell *matCellDef="let row">{{ row.date }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="alertMessage">
+    <th mat-header-cell *matHeaderCellDef class="header-cell">Alert Message</th>
+    <td mat-cell *matCellDef="let row">{{ row.alertMessage }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="origin">
+    <th mat-header-cell *matHeaderCellDef class="header-cell">Origin</th>
+    <td mat-cell *matCellDef="let row">{{ row.origin }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef class="header-cell">Action</th>
+    <td mat-cell *matCellDef="let row">{{ row.action }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

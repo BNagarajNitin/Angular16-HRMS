@@ -1,0 +1,33 @@
+
+.font-style1 {
+  font-family: Arial, sans-serif;
+}
+
+.font-style2 {
+  font-family: 'Times New Roman', serif;
+}
+
+
+.small-text {
+  font-size: 12px;
+}
+
+.medium-text {
+  font-size: 16px;
+}
+.large-text {
+  font-size: 20px;
+}
+
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+.green-text {
+  color: green;
+}
+

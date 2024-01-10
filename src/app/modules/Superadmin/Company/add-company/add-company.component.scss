@@ -1,0 +1,42 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
+
+}
+label{
+  font-size: 25px;
+  padding: 10px;
+}
+.wider-input {
+  height: 50px;
+}
+span{
+  color: red;
+}
+.radio-group{
+  display: flex;
+  justify-content:space-around;
+}
+.auth{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.upload{
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+
+}
+.card{
+  margin-left: 20px;
+}
+

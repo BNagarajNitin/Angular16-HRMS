@@ -1,0 +1,72 @@
+/* Style for the theme selector container */
+.choose-theme {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each theme button */
+.choose-theme button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choose-theme button:hover {
+  background-color: #f2f2f2; /* Hover background color */
+}
+
+/* Style for the active theme button */
+.choose-theme button.active {
+  background-color: #007bff; /* Active background color */
+  color: #fff; /* Text color for active button */
+}
+
+/* Style for the color indicators inside each button */
+.choose-theme button .white,
+.choose-theme button .black,
+.choose-theme button .purple,
+.choose-theme button .orange,
+.choose-theme button .cyan,
+.choose-theme button .green,
+.choose-theme button .blue {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Define colors for each color indicator */
+.choose-theme button .white {
+  background-color: #ffffff;
+}
+
+.choose-theme button .black {
+  background-color: #000000;
+}
+
+.choose-theme button .purple {
+  background-color: #800080;
+}
+
+.choose-theme button .orange {
+  background-color: #ffa500;
+}
+
+.choose-theme button .cyan {
+  background-color: #00ced1;
+}
+
+.choose-theme button .green {
+  background-color: #008000;
+}
+
+.choose-theme button .blue {
+  background-color: #0000ff;
+}

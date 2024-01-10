@@ -1,0 +1,34 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
+
+}
+label{
+  font-size: 25px;
+  padding: 10px;
+}
+
+.wider-input {
+  height: 50px;
+}
+.button{
+  padding: 50px 50px;
+}
+.card{
+  margin-left: 50px;
+}
+.header{
+  margin-top: 20px;
+
+}
+
+

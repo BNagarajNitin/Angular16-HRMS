@@ -1,0 +1,34 @@
+/* settings.component.css */
+
+/* Define CSS classes for each sidebar color option */
+.light {
+  background-color: #ffffff; /* Light color */
+  color: #333333; /* Text color for light sidebar */
+}
+
+.dark {
+  background-color: #333333; /* Dark color */
+  color: #ffffff; /* Text color for dark sidebar */
+}
+
+.peel {
+  background-color: #ffcc00; /* Peel color */
+  color: #333333; /* Text color for peel sidebar */
+}
+
+.cyan {
+  background-color: #00ccff; /* Cyan color */
+  color: #333333; /* Text color for cyan sidebar */
+}
+
+.orange {
+  background-color: #ff6600; /* Orange color */
+  color: #333333; /* Text color for orange sidebar */
+}
+
+/* Add any additional styling for the sidebar as needed */
+.sidebar {
+  width: 250px; /* Sidebar width */
+  height: 100%; /* Sidebar height */
+  /* Add any other common sidebar styles here */
+}

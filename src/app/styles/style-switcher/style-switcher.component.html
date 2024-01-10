@@ -1,0 +1,61 @@
+<section class="content">
+  <div class="content-block">
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+            <!-- You can add a heading here if needed -->
+          </div>
+          <div class="body">
+            <ul class="choose-theme list-unstyled mb-0">
+              <li>
+                <button data-theme="white" [ngClass]="{'active': selectedBgColor === 'white'}" (click)="selectTheme('white')">
+                  White
+                  <div class="white"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="black" [ngClass]="{'active': selectedBgColor === 'black'}" (click)="selectTheme('black')">
+                  Black
+                  <div class="black"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="purple" [ngClass]="{'active': selectedBgColor === 'purple'}" (click)="selectTheme('purple')">
+                  Purple
+                  <div class="purple"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="orange" [ngClass]="{'active': selectedBgColor === 'orange'}" (click)="selectTheme('orange')">
+                  Orange
+                  <div class="orange"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="cyan" [ngClass]="{'active': selectedBgColor === 'cyan'}" (click)="selectTheme('cyan')">
+                  Cyan
+                  <div class="cyan"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="green" [ngClass]="{'active': selectedBgColor === 'green'}" (click)="selectTheme('green')">
+                  Green
+                  <div class="green"></div>
+                </button>
+              </li>
+              <li>
+                <button data-theme="blue" [ngClass]="{'active': selectedBgColor === 'blue'}" (click)="selectTheme('blue')">
+                  Blue
+                  <div class="blue"></div>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+</section>

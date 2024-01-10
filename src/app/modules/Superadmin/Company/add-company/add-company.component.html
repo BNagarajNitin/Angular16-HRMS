@@ -1,0 +1,110 @@
+<section class="content">
+  <div class="content-block">
+
+    </div>
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong>Add New Company</strong></h2>
+
+
+            <button mat-raised-button color="primary" routerLink="/Company/allcompany">All Company</button>
+
+          </div>
+          <div class="body">
+
+            <label  for="companyname" class="required-label">Company name<span class="required">*</span></label>
+            <input type="text" class="wider-input">
+            <label  for="companyemail" class="required-label">Company email<span class="required">*</span></label>
+            <input type="text" class="wider-input">
+            <label for="subdomain" class="required-label">Subdomain(i.e company1.hrbiz.in)<span class="required">*</span></label>
+            <input type="text" class="wider-input">
+            <p>hrbiz.in</p>
+            <label for="customdomain" class="required-label">Custom Domain</label>
+            <input type="text" class="wider-input">
+            <p>White Label Domain i.e app.yourdomain.com to above subdomain</p>
+            <label  for="companydescription" class="required-label">Company description</label>
+
+            <ckeditor [formControl]="content" required></ckeditor>
+            <button mat-raised-button color="primary" class="upload">Upload Logo</button>
+            <label  for="companyaddress" class="required-label">Company Address</label>
+            <input type="text" class="wider-input">
+            <mat-radio-group class="radio-group">
+              <mat-radio-button id="option1"  value="option1" color="primary">Active</mat-radio-button>
+              <mat-radio-button   id="option2"   color="primary" value="option2">Inactive</mat-radio-button>
+             </mat-radio-group>
+            <label>Admin Assigned Module</label>
+            <select id="options" name="options" class="wider-input">
+              <option value="option1">Surveys</option>
+              <option value="option2">Office Flat Pro team</option>
+              <option value="option3">Purchase</option>
+              <option value="option4">supplier</option>
+              <option value="option5">Menu Setup</option>
+              <option value="option6">Database Backup</option>
+              <option value="option7">Theme Style</option>
+              <option value="option8">HR Payroll</option>
+              <option value="option9">HR Records</option>
+              <option value="option10">Multi-factor authenication</option>
+              <option value="option11">Goals</option>
+              <option value="option12">File Sharing</option>
+              <option value="option13">Account and Bookkepping</option>
+              <option value="option14">Marketing Automation</option>
+              <option value="option15">Spreadsheet Online</option>
+              <option value="option16">Mail Box</option>
+              <option value="option17">CSV Export Manager</option>
+              <option value="option18">Staff workload</option>
+              <option value="option19">Time Sheet Attendance Management</option>
+              <option value="option20">Recruitment</option>
+
+            </select>
+            <label >Admin Disabled Module</label>
+            <select id="options" name="options" class="wider-input">
+              <option value="option1">Surveys</option>
+              <option value="option2">Office Flat Pro team</option>
+              <option value="option3">Purchase</option>
+              <option value="option4">supplier</option>
+              <option value="option5">Menu Setup</option>
+              <option value="option6">Database Backup</option>
+              <option value="option7">Theme Style</option>
+              <option value="option8">HR Payroll</option>
+              <option value="option9">HR Records</option>
+              <option value="option10">Multi-factor authenication</option>
+              <option value="option11">Goals</option>
+              <option value="option12">File Sharing</option>
+              <option value="option13">Account and Bookkepping</option>
+              <option value="option14">Marketing Automation</option>
+              <option value="option15">Spreadsheet Online</option>
+              <option value="option16">Mail Box</option>
+              <option value="option17">CSV Export Manager</option>
+              <option value="option18">Staff workload</option>
+              <option value="option19">Time Sheet Attendance Management</option>
+              <option value="option20">Recruitment</option>
+
+
+            </select>
+            <div class="auth"><strong>Magic auth- Instant dashboard access</strong>
+
+              </div>
+            <div>
+              <button mat-raised-button color="primary">Launch</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
